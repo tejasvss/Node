@@ -1,11 +1,12 @@
 const express=require('express');
 const app=express();
+const port=process.env.PORT || 2222;
 
-app.get('/',(req,res)=>{
+app.get('/yes',(req,res)=>{
     res.send("BETMASTER SECOND SAMPLE BACKEND PROJECT")
 });
 
-app.listen(5001,()=>{
+app.listen(port,()=>{
     console.log("Port is hosted")
 })
 
